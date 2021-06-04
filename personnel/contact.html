@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <title>Christian Duboc</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md  fixed-top maine-menu">
+    <script>
+      $(document).ready(function(){ 
+    $('#characterLeft').text('140 characters left');
+    $('#message').keydown(function () {
+        var max = 140;
+        var len = $(this).val().length;
+        if (len >= max) {
+            $('#characterLeft').text('You have reached the limit');
+            $('#characterLeft').addClass('red');
+            $('#btnSubmit').addClass('disabled');            
+        } 
+        else {
+            var ch = max - len;
+            $('#characterLeft').text(ch + ' characters left');
+            $('#btnSubmit').removeClass('disabled');
+            $('#characterLeft').removeClass('red');            
+        }
+    });    
+});
+    </script>
+    
+  
+    <div class="container">
+      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"> <a class="nav-link" href="#">Accueil</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">A propos</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Activité</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
+          <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid fh5co-home-banner">
+    <div class="card"> <img class="card-img" src="images/entrepreneur-1103722_1920.jpg" alt="">
+      <div class="card-img-overlay">
+        <div class="center-text">
+          <h2 class="card-title">DEVELOPPER VOTRE VISIBILITE SUR LE WEB</h2>
+          <a href="#" class="btn">
+            <svg width="201" height="51" viewBox="0 0 201 51">
+              <defs>
+                <style>
+                .cls-1 {
+                  fill: none;
+                  stroke-width: 1px;
+                  stroke: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="1" stop-color="#fff"/>
+              </linearGradient>
+            </defs>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+          </svg>
+        Contact</a> </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid fh5co-recent-work">
+    <div class="container contact-pop">
+      <div class="row">
+        <div class="col-md-6  pr-0">
+          <div class="card"> <img class="card-img w-100" src="images/shop-1466324_1920.jpg" alt="">
+            <div class="card-img-overlay"> </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-0" id="about">
+          <div class="content">
+            <h3>Christian Duboc Service </h3>
+            <h4>Développeur web front-end </h4>
+            <hr />
+            <p>Je vous accompagne dans la création de vos applications web ou mobiles.Site vitrine ou application sur mesure,je vous propose un ensemble de solutions.</p>
+            <a href="#" class="btn">CONTACT</a> </div>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="container contact">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="contact-info">
+              <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+              <h2>Contacter moi </h2>
+              <h4>We would love to hear from you !</h4>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="contact-form">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">Nom :</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">Prénom:</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Message:</label>
+                <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script> 
+  <script src="assets/js/popper.min.js" ></script> 
+  <script src="assets/js/bootstrap.min.js"></script> 
+  <script src="assets/js/owl.carousel.min.js"></script> 
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
