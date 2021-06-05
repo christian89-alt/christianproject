@@ -2,6 +2,7 @@
 var firebaseConfig = {
   apiKey: "AIzaSyDmogF4z0Yl-ys66PRaOb-068cloeCuLVA",
   authDomain: "contact-form-7d1fb.firebaseapp.com",
+  databaseURL: "https://contact-form-7d1fb-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "contact-form-7d1fb",
   storageBucket: "contact-form-7d1fb.appspot.com",
   messagingSenderId: "583257690848",
@@ -9,6 +10,7 @@ var firebaseConfig = {
   measurementId: "G-KLDYEW0JH0"
 };
 firebase.initializeApp(config);
+firebase.analytics();
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -28,7 +30,7 @@ function submitForm(e){
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, company, email, phone, message);
+   saveMessage(name, company, email, phone, message);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -55,6 +57,6 @@ function saveMessage(name, company, email, phone, message){
     company:company,
     email:email,
     phone:phone,
-    message:message
+    message:message,
   });
 }
