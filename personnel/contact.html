@@ -17,38 +17,14 @@
 
 <body>
   <nav class="navbar navbar-expand-md  fixed-top maine-menu">
-    <script>
-      $(document).ready(function(){ 
-    $('#characterLeft').text('140 characters left');
-    $('#message').keydown(function () {
-        var max = 140;
-        var len = $(this).val().length;
-        if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
-            $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass('disabled');            
-        } 
-        else {
-            var ch = max - len;
-            $('#characterLeft').text(ch + ' characters left');
-            $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');            
-        }
-    });    
-});
-    </script>
-    
-  
     <div class="container">
       <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
       <div id="my-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active"> <a class="nav-link" href="#">Accueil</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">A propos</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Activité</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
-          <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
+          <li class="nav-item active"> <a class="nav-link" href="http://portaildevistravos.com/">Accueil</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="http://portaildevistravos.com/portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
+          <li class="nav-item"> <a class="nav-link" href="http://portaildevistravos.com/services" tabindex="-1" aria-disabled="true">Services</a></li>
+          <li class="nav-item"> <a class="nav-link" href="http://portaildevistravos.com//contact" tabindex="-1" aria-disabled="true">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -112,8 +88,8 @@
             </ul>
           </div>
           <div class="contact">
-            <h3>Email Us</h3>
-            <div class="alert">Your message has been sent</div>
+            <h3>Contacter nous</h3>
+            <div class="alert">Votre message à bien été envoyé</div>
             <form id="contactForm">
               <p>
                 <label>Nom</label>
@@ -143,13 +119,20 @@
         </div>
       </div>
       
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
   <script src="assets/js/jquery-3.3.1.slim.min.js"></script> 
   <script src="assets/js/popper.min.js" ></script> 
   <script src="assets/js/bootstrap.min.js"></script> 
   <script src="assets/js/owl.carousel.min.js"></script> 
-  <script src="assets/js/main.js"></script>
+
 
 </body>
 </html>
