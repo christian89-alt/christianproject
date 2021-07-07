@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author"      content="Christian Duboc">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Christian Duboc services, développeur front end et conseiller d'entreprise</title>
+	<title>Sign up - Progressus Bootstrap template</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -25,7 +25,7 @@
 	<![endif]-->
 </head>
 
-<body class="home">
+<body>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 		<div class="container">
@@ -41,65 +41,94 @@
 					<li class="dropdown">
 						<a href="mes services.html" class="dropdown-toggle" data-toggle="dropdown">Mes services <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="creation eboutique.html">Application web</a></li>
+							<li><a href="creation site web.html">Application web </a></li>
 							<li class="active"><a href="portfolio.html">Portfolio</a></li>
 							<li class="active"><a href="conseil entreprise.html">Conseil entreprise</a></li>
 						</ul>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
-				
+					<li><a class="btn" href="signin.html">Connexion</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div> 
 	<!-- /.navbar -->
 
-	<!-- Header -->
-	<header id="head">
-		<div class="container">
-			<div class="row">
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="index.html">Accueil</a></li>
+			<li class="active">Mon compte </li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">ENREGISTREMENT</h1>
+				</header>
 				
-				<h1 class="lead">JE VOUS ACCOMPAGNE DANS LA MISE EN PLACE DE VOS APPLICATIONS WEB </h1>
-				
-				<p class="tagline">Christian DUBOC Services: cabinet de développement web et conseil en transition numérique <a href="http://www.portaildevistravos.com">Nous découvrir</a></p>
-				<p><a class="btn btn-default btn-lg" href="https://book.timify.com?accountId=5f84c58613a21611d2a772e9&fullscreen=1&hideCloseButton=1&locale=fr-fr"role="button">PRENDRE RENDEZ-VOUS</a> <a class="btn btn-action btn-lg" role="button">CONTACT</a></p>
-			</div>
-		</div>
-	</header>
-	<!-- /Header -->
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Enregistrez vous!</h3>
+							<p class="text-center text-muted">Lorem ipsum dolor sit amet, <a href="signin.html">Login</a> adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio. </p>
+							<hr>
 
-	<!-- Intro -->
-	<div class="container text-center">
-		<br> <br>
-		<h2 class="thin">DEVELOPPEUR FRONT END & CONSEIL ENTREPRISE</h2>
-		<p class="text-muted">
-			Aujourd'hui la pandémie liée à la Covid-19 à changer le monde de l'entreprise en acentuant la digitalisation des services. Ne manquez pas le cap !
-		</p>
-	</div>
-	<!-- /Intro-->
+							<form>
+								<div class="top-margin">
+									<label>Nom</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="top-margin">
+									<label>Prénom</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="top-margin">
+									<label>Adresse e-mail <span class="text-danger">*</span></label>
+									<input type="text" class="form-control">
+								</div>
 
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label>Mot de passe <span class="text-danger">*</span></label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Confirmez <span class="text-danger">*</span></label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
 
+								<hr>
 
+								<div class="row">
+									<div class="col-lg-8">
+										<label class="checkbox">
+											<input type="checkbox"> 
+											J'ai lu <a href="condition de vente.html">Termes et Conditions</a>
+										</label>                        
+									</div>
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit">S'enregistrer</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
 
-
-	
-	<!-- Social links. @TODO: replace by link/instructions in template -->
-	<section id="social">
-		<div class="container">
-			<div class="wrapper clearfix">
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style">
-				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-				<a class="addthis_button_tweet"></a>
-				<a class="addthis_button_linkedin_counter"></a>
-				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
 				</div>
-				<!-- AddThis Button END -->
-			</div>
-		</div>
-	</section>
-	<!-- /social links -->
+				
+			</article>
+			<!-- /Article -->
 
+		</div>
+	</div>	<!-- /container -->
+	
 
 	<footer id="footer" class="top-space">
 
@@ -151,7 +180,7 @@
 							<p class="simplenav">
 								<a href="index.html">Accueil</a> | 
 								<a href="condition de vente.html">Conditions de ventes</a> |
-								<a href="politique protection des données.html">Politique de protections des données personnelles</a> |
+								<a href="contact.html">Politique de protections des données personnelles</a> |
 								<b><a href="signup.html">Je m'enregistre</a></b>
 							</p>
 						</div>
@@ -170,6 +199,7 @@
 		</div>
 
 	</footer>	
+		
 		
 
 
